@@ -25,9 +25,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
+          rm public/.gitignore
           npm install
           npm run build
-          rm public/.gitignore
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
