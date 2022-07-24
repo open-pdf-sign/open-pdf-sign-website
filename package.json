@@ -1,0 +1,46 @@
+{
+  "name": "Open-pdf-sign website",
+  "version": "1.0.1",
+  "description": "Website for open-pdf-sign",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "dev": "webpack-dev-server --open --config webpack.config.js --mode development",
+    "images": "node ./bin/images.js"
+  },
+  "type": "module",
+  "author": "Thomas Schreiber",
+  "license": "APL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-pdf-sign/open-pdf-sign-website"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@popperjs/core": "^2.11.5",
+    "autoprefixer": "10.4.5",
+    "babel-loader": "^8.2.4",
+    "bootstrap": "^5.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.0",
+    "dotenv-webpack": "^8.0.0",
+    "fast-glob": "^3.2.11",
+    "html-webpack-plugin": "^5.5.0",
+    "mime-types": "^2.1.34",
+    "mini-css-extract-plugin": "^2.6.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "7.4.3",
+    "sass": "^1.51.0",
+    "sass-loader": "^13.0.2",
+    "sharp": "^0.30.4",
+    "style-loader": "^3.3.1",
+    "trash": "^8.1.0",
+    "uuid": "^8.3.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
