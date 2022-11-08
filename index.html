@@ -14,7 +14,7 @@
     <!-- JUMBOTRON -->
     <div class="px-4 py-5 my-5 text-center">
 
-        <h1 class="display-5 fw-bold">open-pdf-sign</h1>
+        <img src="images/openpdfsign.svg" class="display-5 logo pb-3 img-fluid" alt="open-pdf-sign Logo" id="openpdfsign-logo" />
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Sign PDF files digitally from CLI or your webserver. <br>No special certificates needed, you can just reuse your already existing certificates, e.g. from Let's Encrypt.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -67,7 +67,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
-            <h2>Usage</h2>
+            <h2>Sign PDFs in your Command Line</h2>
             <p>
                 The CLI can be easily invoked. Just run
             </p>
@@ -77,6 +77,29 @@
      -k /etc/letsencrypt/live/openpdfsign.org/privkey.pem</code></pre>
                 </pre>
             </div>
+     <!--       <p>
+                That's it! 🎉
+            </p>
+            <p>
+                In its default settings, the document is signed using an invisible electronic
+                signature. In case you want to add a visible signature to the signed documents,
+                you can use the <span class="text-bg-light font-monospace">--page</span>,
+                <span class="text-bg-light font-monospace">--logo</span>,
+                <span class="text-bg-light font-monospace">--hint</span> and other options.
+            </p>
+            <div class="bg-light p-3">
+            <pre class="m-0"><code>java -jar open-pdf-sign.jar -i input.pdf -o output.pdf \
+     -c /etc/letsencrypt/live/openpdfsign.org/fullchain.pem \
+     -k /etc/letsencrypt/live/openpdfsign.org/privkey.pem \
+     --page -1 --logo mylogo.png --hint "check it online"</code></pre>
+                </pre>
+            </div>
+            <p>
+                Will sign your PDF on the last page with a textblock containing your given image:
+            </p>
+            <p>
+                <img src="images/signature.png" alt="a signed PDF document" class="img-fluid border rounded-3 shadow-lg mb-4" />
+            </p>-->
         </div>
     </div>
 
