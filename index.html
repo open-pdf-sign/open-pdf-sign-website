@@ -21,7 +21,7 @@
 
         <img src="images/openpdfsign.svg" class="display-5 logo pb-4 img-fluid" alt="open-pdf-sign Logo" id="openpdfsign-logo" />
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Sign PDF files digitally from CLI or your webserver. <br>No special certificates needed, you can just reuse your already existing certificates, e.g. from Let's Encrypt.</p>
+            <p class="lead mb-4">Sign PDF files digitally from CLI or your webserver</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="https://github.com/open-pdf-sign/open-pdf-sign/releases" class="btn btn-primary btn-lg px-4 gap-3">Download</a>
                 <a href="https://github.com/open-pdf-sign/open-pdf-sign" class="btn btn-outline-secondary btn-lg px-4">Docs</a>
@@ -31,19 +31,43 @@
 </div>
 
 <div class="container">
-    <div class="container px-4 py-5" id="hanging-icons">
+    <div class="container px-4 py-5">
+        <div class="col-md-6 mx-auto">
+            <img src="images/header_illustration.svg" class="w-100 my-3">
+        </div>
+        <div class="col-md-6 mx-auto">
+            <div class="lead mb-4 text-center">
+                <p>
+                Easily sign PDF files from your command line or just let your nginx sign all
+                    PDFs that are served to your visitors.
+
+                No special certificates needed, you can just
+                reuse your already existing certificates, e.g. from Let's Encrypt.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container px-4 py-5" id="ops-features">
         <h2 class="pb-2 border-bottom">Features</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="col d-flex align-items-start">
-
                 <div>
-                    <h2>Digital Signature</h2>
+                    <div class="feature-icon text-center">
+                        <img src="images/certificate.svg" class="w-50 my-2">
+                    </div>
+                    <h2 class="pt-3 text-center">Digital Signature</h2>
                     <p>Cryptographically sign your PDF files in PAdES-B and PAdES-T. This lets your site visitors know that PDFs were actually served by your server.</p>
                 </div>
             </div>
             <div class="col d-flex align-items-start">
                 <div>
-                    <h2>Customization</h2>
+                    <div class="feature-icon text-center">
+                        <img src="images/certificates.svg" class="w-100">
+                    </div>
+                    <h2 class="pt-3 text-center">Customization</h2>
                     <p>Customize the signature to your liking. You can append a visible or invisible signature. Visible signatures can be further customized.</p>
                     <a href="https://github.com/open-pdf-sign/open-pdf-sign" class="btn btn-outline-secondary">
                         Docs
@@ -51,15 +75,14 @@
                 </div>
             </div>
             <div class="col d-flex align-items-start">
-
                 <div>
-                    <h2>Server integration</h2>
+                    <div class="feature-icon text-center">
+                        <img src="images/server.svg" class="w-100">
+                    </div>
+                    <h2 class="pt-3 text-center">Server integration</h2>
                     <p>open-pdf-sign easily integrates in your existing server. Coming soon!</p>
-                    <a href="#" class="btn btn-outline-secondary disabled me-2" aria-disabled="true">
+                    <a href="https://github.com/open-pdf-sign/open-pdf-sign-configurator" class="btn btn-outline-secondary me-2" aria-disabled="true">
                         nginx
-                    </a>
-                    <a href="#" class="btn btn-outline-secondary disabled" aria-disabled="true">
-                        Apache
                     </a>
                 </div>
             </div>
@@ -108,6 +131,34 @@
         </div>
     </div>
 
+</div>
+<div class="container">
+    <hr class="col-lg-10 offset-lg-1" />
+</div>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Let's sign every PDF your server serves.</h2>
+            <p>
+                While you can use <i>open-pdf-sign</i> to sign single PDFs, you can also use the <i>open-pdf-sign-configurator</i>
+                to just sign every single PDF that your nginx server serves.
+            </p>
+            <p>
+                <b>But why?</b><br/>
+                Users that access PDFs of your website directly can be sure of the authenticity of the served PDFs
+                because of the TLS connection. This however ends at the end of the TLS connection. If the PDF
+                is shared after download, the recipient cannot be sure of the authenticity of the PDF.<br/>
+                With the <i>open-pdf-sign</i> server installed, every PDF served is automatically and invisibly
+                signed with the certificate already used for the TLS connection. This allows recipients of the PDF
+                to verify that the PDF actually came from your server, even after it was shared outside the TLS
+                connection. This is illustrated by the diagram below.
+            </p>
+            <p>
+                <img src="images/desktop_illustration.svg" class="w-100 d-none d-md-block py-2">
+                <img src="images/mobile_illustration.svg" class="w-100 d-md-none py-2">
+            </p>
+        </div>
+    </div>
 </div>
 
 
