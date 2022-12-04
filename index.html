@@ -94,7 +94,7 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
-            <h2>Sign PDFs in your Command Line</h2>
+            <h2>Sign PDFs from your Command Line</h2>
             <p>
                 The CLI can be easily invoked. Just run
             </p>
@@ -143,20 +143,18 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
-            <h2>Let's sign every PDF your server serves.</h2>
+            <h2>Let's sign every PDF that is served by your server.</h2>
             <p>
                 While you can use <i>open-pdf-sign</i> to sign single PDFs, you can also use the <i>open-pdf-sign-configurator</i>
-                to just sign every single PDF that your nginx server serves.
+                to just sign every single PDF that your nginx server hosts on the fly.
             </p>
             <p>
                 <b>But why?</b><br/>
                 Users that access PDFs of your website directly can be sure of the authenticity of the served PDFs
-                because of the TLS connection. This however ends at the end of the TLS connection. If the PDF
-                is shared after download, the recipient cannot be sure of the authenticity of the PDF.<br/>
+                because of the TLS connection.<br/>
                 With the <i>open-pdf-sign</i> server installed, every PDF served is automatically and invisibly
                 signed with the certificate already used for the TLS connection. This allows recipients of the PDF
-                to verify that the PDF actually came from your server, even after it was shared outside the TLS
-                connection. This is illustrated by the diagram below.
+                to verify that the PDF actually came from your server.
             </p>
         </div>
         <div class="col-lg-10 offset-lg-1 pt-3">
